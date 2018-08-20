@@ -1,0 +1,22 @@
+.works {
+     padding: 45px 0 45px;
+     @include breakpoint(phone) {
+         padding: 10px 0;
+    }
+     @include breakpoint(tablet) {
+         padding: 50px 0;
+    }
+}
+ .works_text_left {
+     position: relative;
+}
+ .works_text_left:after {
+     @extend .col_left:after;
+     background: black;
+     top: 90px;
+     left: 0;
+}
+ .works_text_right {
+     text-align: left;
+     padding: 30px 0;
+}
